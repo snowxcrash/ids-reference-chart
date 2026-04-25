@@ -72,7 +72,7 @@ function Row({ row }) {
 
 function CollapsibleTable() {
   return(
-    <Box sx={{ margin: 1 }}>
+    <Box sx={{ margin: 1, backgroundColor: "#ffffff" }}>
       <Typography variant="h6" gutterBottom component="div">
         core_profiles
       </Typography>
