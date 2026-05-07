@@ -1,10 +1,10 @@
-import CollapsibleTable from './CollapsibleTable.jsx'
+import ScrollableTabs from './ScrollableTabs.jsx'
 import './App.css'
 
 function App() {
   return (
     <>
-      <CollapsibleTable />
+      <ScrollableTabs />
     </>
   )
 }
