@@ -7,6 +7,10 @@ import TableCoreProfiles from './TableCoreProfiles.jsx'
 import TableCoreSources from './TableCoreSources.jsx'
 import TableCoreTransport from './TableCoreTransport.jsx'
 import TableDisruption from './TableDisruption.jsx'
+import TableEquilibrium from './TableEquilibrium.jsx'
+import TablePfActive from './TablePfActive.jsx'
+import TablePfPassive from './TablePfPassive.jsx'
+import TableRadiation from './TableRadiation.jsx'
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -63,9 +67,12 @@ export default function ScrollableTabsButtonVisible() {
           <Tab label="core_sources" />
           <Tab label="core_transport" />
           <Tab label="disruption" />
-          <Tab label="Item Five" />
-          <Tab label="Item Six" />
-          <Tab label="Item Seven" />
+          <Tab label="equilibrium" />
+          <Tab label="pf_active" />
+          <Tab label="pf_passive" />
+          <Tab label="radiation" />
+          <Tab label="Item Nine" />
+          <Tab label="Item Ten" />
         </Tabs>
         <CustomTabPanel value={value} index={0}>
           <TableCoreProfiles />
@@ -80,13 +87,22 @@ export default function ScrollableTabsButtonVisible() {
           <TableDisruption />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
-          Item Five
+          <TableEquilibrium />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={5}>
-          Item Six
+          <TablePfActive />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={6}>
-          Item Seven
+          <TablePfPassive />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={7}>
+          <TableRadiation />
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={8}>
+          Item Nine
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={9}>
+          Item Ten
         </CustomTabPanel>
       </Box>
     </Box>
