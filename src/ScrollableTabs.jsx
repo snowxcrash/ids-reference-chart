@@ -5,6 +5,7 @@ import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import TableCoreProfiles from './TableCoreProfiles.jsx'
 import TableCoreSources from './TableCoreSources.jsx'
+import TableCoreTransport from './TableCoreTransport.jsx'
 import TableDisruption from './TableDisruption.jsx'
 
 function CustomTabPanel(props) {
@@ -60,8 +61,8 @@ export default function ScrollableTabsButtonVisible() {
         >
           <Tab label="core_profiles" />
           <Tab label="core_sources" />
+          <Tab label="core_transport" />
           <Tab label="disruption" />
-          <Tab label="Item Four" />
           <Tab label="Item Five" />
           <Tab label="Item Six" />
           <Tab label="Item Seven" />
@@ -73,10 +74,10 @@ export default function ScrollableTabsButtonVisible() {
           <TableCoreSources />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          <TableDisruption />
+          <TableCoreTransport />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}>
-          Item Four
+          <TableDisruption />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
           Item Five
