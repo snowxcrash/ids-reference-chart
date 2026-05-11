@@ -11,6 +11,7 @@ import TableEquilibrium from './TableEquilibrium.jsx'
 import TablePfActive from './TablePfActive.jsx'
 import TablePfPassive from './TablePfPassive.jsx'
 import TableRadiation from './TableRadiation.jsx'
+import TableSummary from './TableSummary.jsx'
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -71,7 +72,7 @@ export default function ScrollableTabsButtonVisible() {
           <Tab label="pf_active" />
           <Tab label="pf_passive" />
           <Tab label="radiation" />
-          <Tab label="Item Nine" />
+          <Tab label="summary" />
           <Tab label="Item Ten" />
         </Tabs>
         <CustomTabPanel value={value} index={0}>
@@ -99,7 +100,7 @@ export default function ScrollableTabsButtonVisible() {
           <TableRadiation />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={8}>
-          Item Nine
+          <TableSummary />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={9}>
           Item Ten
